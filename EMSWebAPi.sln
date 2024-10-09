@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSWebAPi", "EMSWebAPi\EMSWebAPi.csproj", "{41477594-F86D-4CBC-8ED3-87971750FDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSMvc", "EMSMvc\EMSMvc.csproj", "{82C6B5A9-F026-441C-929B-6D5F4B639AA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41477594-F86D-4CBC-8ED3-87971750FDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41477594-F86D-4CBC-8ED3-87971750FDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41477594-F86D-4CBC-8ED3-87971750FDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41477594-F86D-4CBC-8ED3-87971750FDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C6B5A9-F026-441C-929B-6D5F4B639AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C6B5A9-F026-441C-929B-6D5F4B639AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C6B5A9-F026-441C-929B-6D5F4B639AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C6B5A9-F026-441C-929B-6D5F4B639AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B6361B5-EFD4-4367-BC0A-EA911E9D5800}
+	EndGlobalSection
+EndGlobal

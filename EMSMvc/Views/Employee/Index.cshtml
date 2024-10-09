@@ -1,0 +1,79 @@
+﻿@model IEnumerable<EMSMvc.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a href="@Url.Action("AddEmployee","Employee")" class="btn btn-primary">
+        <i class="fa fa-plus"></i>
+        Add New
+    </a>
+</p>
+<table class="table table-responsive table-bordered  table-success table-striped">
+    <thead class="table-dark">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th> Action</th>
+        </tr>
+    </thead>
+
+    @foreach (var item in ViewBag.listemployee)
+    {
+        <tr>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.Position
+            </td>
+            <td>
+                @item.Age
+            </td>
+            <td>
+                @item.Salary
+            </td>
+            <td>
+                <a href="@Url.Action("EditEmployee",new { id = item.EmployeeID })" class="btn btn-primary">
+                    <i class="fa fa-edit" style="font-size:20px"></i>
+
+                </a>
+
+                <a onclick="return confirm('Are you sure want to Delete?')" href="@Url.Action("DeleteEmployee","Employee",new {id = item.EmployeeID })" class="btn btn-danger">
+                    <i class="fa fa-trash-o" style="font-size:20px"></i>
+                </a>
+
+
+            </td>
+        </tr>
+    }
+
+</table>
+@section scripts{
+    <script>
+        $(function () {
+            var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                alertify.success(successMessage);
+        })
+
+    </script>
+}
